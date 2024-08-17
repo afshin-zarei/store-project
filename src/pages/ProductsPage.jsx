@@ -8,6 +8,7 @@ import Loader from "../components/Loader";
 import { useProducts } from "../context/ProductContext";
 
 import styles from "./ProductsPage.module.css";
+import { filterProducts, searchProducts } from "../helper/helper";
 
 function ProductsPage() {
   const products = useProducts();
@@ -20,12 +21,11 @@ function ProductsPage() {
     setDisplayed(products);
   }, [products]);
 
-  useEffect(
-    () => {
-      console.log(query);
-    },
-    [query]
-  );
+  useEffect(() => {
+    let finalProducts = searchProducts(products, query.search);
+    finalProducts = filterProducts(finalProducts, query.category);
+    setDisplayed(finalProducts);
+  }, [query]);
 
   const searchHandler = () => {
     setQuery((query) => ({ ...query, search }));
@@ -66,10 +66,7 @@ function ProductsPage() {
             <FaListUl />
             <p>Categories</p>
           </div>
-          <ul
-            onClick={categoryHandler}
-            style={{ backgroundColor: "red", width: "500px", padding: "50px" }}
-          >
+          <ul onClick={categoryHandler}>
             <li>All</li>
             <li>Electronics</li>
             <li>Jewelery</li>
