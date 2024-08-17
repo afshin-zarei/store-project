@@ -12,7 +12,7 @@ function ProductsProvider({ children }) {
       try {
         setProducts(await api.get("/products"));
       } catch (error) {
-        console.log(error.message);
+        console.log(error);
       }
     };
 
