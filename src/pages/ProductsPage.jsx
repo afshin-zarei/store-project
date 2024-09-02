@@ -12,6 +12,8 @@ import {
   getInitialQuery,
 } from "../helper/helper";
 
+
+
 import styles from "./ProductsPage.module.css";
 import SearchBox from "../components/SearchBox";
 import Sidebar from "../components/Sidebar";
