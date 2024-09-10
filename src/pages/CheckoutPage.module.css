@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  min-height: 1000px;
+}
+
+.empty_basket {
+  min-height: 1000px;
+  text-align: center;
+}
+
+.empty_basket img {
+  width: 500px;
+}
+
+.empty_basket p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.products {
+  width: 100%;
+}
