@@ -22,18 +22,18 @@ function CheckoutPage() {
   // }
 
   return (
-    // <div className={styles.container}>
-    //   <BasketSidebar state={state} clickHandler={clickHandler} />
-    //   <div className={styles.products}>
-    //     {state.selectedItems.map((product) => (
-    //       <BasketCard
-    //         key={product.id}
-    //         data={product}
-    //         clickHandler={clickHandler}
-    //       />
-    //     ))}
-    //   </div>
-    // </div>
+    <div className={styles.container}>
+      {/* <BasketSidebar state={state} clickHandler={clickHandler} />
+      <div className={styles.products}>
+        {state.selectedItems.map((product) => (
+          <BasketCard
+            key={product.id}
+            data={product}
+            clickHandler={clickHandler}
+          />
+        ))}
+      </div> */}
+    </div>
   );
 }
 
