@@ -7,11 +7,11 @@ const initialState = {
   total: 0,
   checkout: false,
 };
-
-const cartSlice = {
+ 
+const cartSlice = createSlice({
   name: "cart",
   initialState,
-  reducer: {
+  reducers: {
     addItem: (state, action) => {
       if (!state.selectedItems.find((i) => i.id === action.payload.id)) {
         state.selectedItems.push({ ...action.payload, quantity: 1 });
@@ -51,8 +51,8 @@ const cartSlice = {
       state.itemsCounter = 0;
     },
   },
-};
+});
 
 export default cartSlice.reducer;
 export const { addItem, removeItem, increase, decrease, checkout } =
-  cartSlice.checkout;
+  cartSlice.actions;
