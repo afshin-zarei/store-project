@@ -24,7 +24,6 @@ function DetailsPage() {
   const productDetails = useSelector((store) =>
     store.products.products.find((i) => i.id === +id)
   );
-  console.log(productDetails);
 
   if (!productDetails) return <Loader />;
 
