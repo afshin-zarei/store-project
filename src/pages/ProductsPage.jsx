@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 
 import Card from "../components/Card";
 import Loader from "../components/Loader";
+import SearchBox from "../components/SearchBox";
+import Sidebar from "../components/Sidebar";
 
 // import { useProducts } from "../context/ProductContext";
 
@@ -13,9 +15,6 @@ import {
   getInitialQuery,
 } from "../helper/helper";
 import { fetchProducts } from "../features/products/productsSlise";
-
-import SearchBox from "../components/SearchBox";
-import Sidebar from "../components/Sidebar";
 
 import styles from "./ProductsPage.module.css";
 

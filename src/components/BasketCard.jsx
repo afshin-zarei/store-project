@@ -1,15 +1,15 @@
+import { useDispatch } from "react-redux";
 import { MdDeleteOutline } from "react-icons/md";
 
 import { shortenText } from "../helper/helper";
 import { decrease, increase, removeItem } from "../features/cart/cartSlice";
 
 import styles from "./BasketCard.module.css";
-import { useDispatch } from "react-redux";
 
 function BasketCard({ data }) {
   const { image, title, quantity } = data;
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   return (
     <div className={styles.card}>

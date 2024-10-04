@@ -1,11 +1,12 @@
+import { useSelector } from "react-redux";
+
 import BasketCard from "../components/BasketCard";
 import BasketSidebar from "../components/BasketSidebar";
 // import { useCart } from "../context/CartContext";
 
-import styles from "./CheckoutPage.module.css";
-
 import emptyBasket from "../assets/emptyBasket.png";
-import { useSelector } from "react-redux";
+
+import styles from "./CheckoutPage.module.css";
 
 function CheckoutPage() {
   // const [state, dispatch] = useCart();

@@ -72,6 +72,7 @@ export {
   filterProducts,
   createQueryObject,
   getInitialQuery,
-  sumPrice,sumQuantity,
+  sumPrice,
+  sumQuantity,
   productQuantity,
 };

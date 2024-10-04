@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 import { sumPrice, sumQuantity } from "../../helper/helper";
 
 const initialState = {
@@ -7,7 +8,7 @@ const initialState = {
   total: 0,
   checkout: false,
 };
- 
+
 const cartSlice = createSlice({
   name: "cart",
   initialState,
