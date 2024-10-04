@@ -1,4 +1,5 @@
 import { createContext, useContext, useReducer } from "react";
+
 import { sumProducts } from "../helper/helper";
 
 const CartContext = createContext();
@@ -9,6 +10,7 @@ const initialState = {
   total: 0,
   checkout: false,
 };
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "ADD_ITEM":

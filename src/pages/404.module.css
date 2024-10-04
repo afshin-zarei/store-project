@@ -1,0 +1,29 @@
+.container {
+  height: 1000px;
+}
+
+.cart {
+  height: 600px;
+  margin: 10px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #333333;
+}
+
+.cart img {
+  width: 100%;
+  height: fit-content;
+  margin-top: 100px;
+}
+
+.cart a {
+  display: inline-block;
+  width: 240px;
+  margin: auto;
+  padding: 10px 0 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+}
