@@ -9,6 +9,7 @@ const initialState = {
   total: 0,
   checkout: false,
 };
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "ADD_ITEM":
